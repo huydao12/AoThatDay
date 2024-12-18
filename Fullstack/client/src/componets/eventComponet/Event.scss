@@ -1,0 +1,28 @@
+.event-container{
+    width: 100%;
+    background-color: #ffffff;
+    color: white;
+    margin-top:20px ;
+    
+
+
+    &--top{
+        margin: 8px 0;
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+        height: 60px;
+        justify-content: center;
+        
+        img {
+            width: 30%;
+            background-color: rgb(235, 26, 26);
+            border-top-left-radius: 100%;
+            border-bottom-right-radius:100%;
+            border-top-right-radius:100%;
+            border-bottom-left-radius:100%;
+        
+        }
+
+    }
+}

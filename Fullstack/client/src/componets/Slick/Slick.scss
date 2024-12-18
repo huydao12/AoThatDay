@@ -1,0 +1,47 @@
+.slick--size{
+    width: 100%;
+    max-height:   550px;
+    
+  
+    &--image {
+      object-fit: cover;
+        width: 100%; 
+        max-height: 100%;
+      
+    }
+}
+
+ button.slick-prev {
+    top: 50%;
+    left: 5%;
+    z-index: 10;
+  }
+   button.slick-next {
+    top: 50%;
+    right: 5%;
+    z-index: 10;
+  }
+   button.slick-prev::before {
+    color: rgb(255, 255, 255);
+    content: "\276E";
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    background: #aeadad;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   button.slick-next::before {
+    color: white;
+    content: "\276F";
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    background: #757575;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    max-width: 100%;
+   
+  }
+  button{
+    cursor: pointer;
+  }
+
+  .content {
+    width: 1200px;
+    text-align: center;
+    height: 100%;
+   
+   
+  }
+  .none {
+    display: none;
+  }
+  .point{
+  cursor: pointer;
+  }
+  .btn{
+    padding: 4px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+  }
+  .error-message{
+    color: red;
+    width: 100% !important; 
+  }
+  @media screen and (max-width: 768px) {
+    .content {
+      width: 100%;
+      padding: 0 ;
+      background-origin: border-box;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .content {
+      width: 100%;
+      padding: 0 ;
+      background-origin: border-box;
+     
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .content {
+      width: 100%;
+      padding: 0 ;
+    
+      background-origin: border-box;
+    }
+  }
+
+  .right-to-left-animation {
+    animation: example 0.5s ease-out forwards;
+  }
+  
+  @keyframes example {
+    from {
+      transform: translateX(100%);
+      opacity: 0; 
+    }
+    to {
+      transform: translateX(0); 
+      opacity: 1; 
+    }
+  }
+
+  // quill
+  .ql-toolbar{
+    display: flex !important;
+  }
+  .ql-editor{
+    min-height: 30vh !important;
+  }
+  .ql-formats{
+    display: flex !important;
+}

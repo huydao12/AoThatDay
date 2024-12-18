@@ -1,0 +1,64 @@
+.box-card-product{
+    background-color: #faf9f9;
+    border: 1px solid rgb(204, 202, 202);
+    width: 99%;
+    cursor: pointer;
+    height: 330px;
+    box-sizing: border-box;
+    text-align: justify;
+  
+    &:hover {box-shadow: white 1px 1px 1px; 
+        background-color: #b7b4b4
+    
+    }
+    &--image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 12px 0;
+        border-radius: 5%;
+    &--img{
+        width: 250px; height: 230px ;
+        border: 1px solid rgb(255, 255, 255) !important
+    }
+    }
+   
+    &--content{
+        display: flex;
+        flex-direction: column;
+        margin: 12px 0;
+        padding: 8px 0;
+        &--name{
+            text-shadow: 1px ;
+            margin: -5px;
+            color: rgb(36, 36, 36);
+            font-size: 13px;
+        }
+        &--monney{
+            display: flex;
+            justify-content: center;
+            padding: 3px 0;
+            &--price{
+                color: #121212;
+                text-decoration: line-through;
+                font-weight: 400;
+                margin: 4px 0;
+                padding-right:6px ;
+            }
+            &--sale{
+                color: #ee2c06;
+                font-weight: 600;
+                margin: 4px 0;
+            }
+        }
+       
+    }
+}
+.box-card-product--content--name {
+    font-weight: bold; /* Chữ in đậm */
+    margin-left: 7px;
+    padding-top: 2px;
+    white-space: nowrap; /* Không cho phép xuống dòng */
+    overflow: hidden; /* Ẩn phần nội dung vượt quá chiều rộng */
+    text-overflow: ellipsis; /* Hiển thị "..." khi nội dung quá dài */
+  }

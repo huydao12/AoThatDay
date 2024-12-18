@@ -1,0 +1,57 @@
+.box-card-event{
+    background-color: #ffffff;
+    border: 4px solid rgb(171, 167, 167);
+    border-radius: 5%;
+    margin: 0 20px;
+    cursor: pointer;
+    &--image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 12px 0;
+    img{
+        width: 180px;
+        height: 150px;
+    }
+    }
+    &--content{
+        display: flex;
+        flex-direction: column;
+        margin: 12px 0;
+        &--name{
+            color: black;
+            text-shadow: 1px ;
+            margin: 0;
+        }
+        &--price{
+            color: #ccc;
+            text-decoration: line-through;
+            font-weight: 400;
+            margin: 4px 0;
+        }
+        &--sale{
+            color: #dd0a0a;
+            font-weight: 600;
+            margin: 4px 0;
+        }
+        &--loader{
+            text-align: center;
+            color: black;
+            background-color: white;
+            margin: 12px 8px;
+            border-radius: 8px;
+            &--color{
+                height: 100%;
+                background-color: #ff9921;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+.box-card-event--content--name{
+  white-space: nowrap;       /* Không cho phép xuống dòng */
+  margin-left: 7px;
+  overflow: hidden;          /* Ẩn phần nội dung tràn */
+  text-overflow: ellipsis;   /* Thêm "..." vào nội dung tràn */
+  max-width: 200px;          /* Đặt chiều rộng tối đa */
+}
